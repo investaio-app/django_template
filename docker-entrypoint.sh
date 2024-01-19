@@ -3,6 +3,8 @@
 
 set -e
 
+source .env
+
 if [ -z ${POSTGRES_DB+x} ]; then
   echo "SQLite will be used.";
 else
